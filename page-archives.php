@@ -17,6 +17,7 @@ get_header(); ?>
 
 					<div class="entry-content">
 
+						<!-- Begin custom content -->
 						<p id="tag-cloud"><?php wp_tag_cloud('smallest=9&largest=30&unit=px&order=ASC&number=0'); ?></p>
 
 						<h2><?php _e( 'Archives', 'twentyeleven' ); ?></h2>
@@ -29,6 +30,7 @@ get_header(); ?>
 						<?php endif; ?>
 						<?php wp_reset_query(); ?>
 						</ul>
+						<!-- End custom content -->
 
 						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyeleven' ), 'after' => '</div>' ) ); ?>
 						<?php edit_post_link( __( 'Edit', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
