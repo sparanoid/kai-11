@@ -1,0 +1,14 @@
+# Mac OS X files
+.DS_Store
+
+# Image original files
+*.psd
+*.ai
+
+# Vim leave-behinds
+*.swp
+
+# Logs
+*.log
+!errors.log
+*.tmproj
