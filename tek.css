@@ -9,11 +9,12 @@
 	box-shadow: rgba(0, 0, 0, .1) 0 5px 20px;
 }
 
-/* No more stupid shadows */
+/* No more stupid shadows and gradient */
 #access {
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
+	background: #000;
 }
 
 /* Change shadows apperance */
