@@ -4,7 +4,7 @@
 
 */
 
-/* Add shadow effect to main wrapper */
+/* Add shadow effect to main wrapper, no -webkit or -moz vendor here, plz */
 #page {
 	box-shadow: rgba(0, 0, 0, .1) 0 5px 20px;
 }
@@ -25,19 +25,24 @@
 }
 
 /* No shadows and white background for user avatar */
-#author-avatar img {
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
-	background: none;
+img.avatar {
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+	background: none !important;
 }
 
-/* Make sure videos and images that larger than container width display correctly. 
+/*
+   Make sure videos and images that larger than container width display correctly. 
    Although in WordPress 3.1, images uploaded through built-in and inserted via its
-   media manager can have currect width, but hard coded images still need this. */
-#content img,
-video {
-	max-width: 100%;
+   media manager can have currect width, but hard coded images still need this. 
+
+   Update: in 3.2 RC2 no longer need workaround for images, but video does.
+*/
+.entry-content video,
+.comment-content video,
+.widget video {
+	max-width: 97.5%;
 }
 
 /* Better code wrapping in containter */
@@ -52,6 +57,6 @@ pre {
 }
 
 /* Try to prevent layout breakers */
-.comment-body {
+.comment-content {
 	word-wrap: break-word;
 }
