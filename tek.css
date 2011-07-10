@@ -24,6 +24,34 @@
 	box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
 }
 
+/* The headr is too fucking BIG */
+#site-title {
+	padding: 1.5em 0 0;
+}
+
+/* The headr is too fucking BIG */
+#site-description {
+	margin-bottom: 1.3em;
+}
+
+/* The headr is too fucking BIG */
+#branding #searchform,
+.one-column #branding #searchform {
+	top: 1.8em;
+}
+
+/* The headr is too fucking BIG */
+#branding .with-image #searchform {
+	top: auto;
+}
+
+/* The headr is too fucking BIG */
+#site-title a {
+	font-size: 20px;
+/*	font-weight: normal;*/
+	line-height: 1;
+}
+
 /* No shadows and white background for user avatar */
 img.avatar {
 	-webkit-box-shadow: none !important;
