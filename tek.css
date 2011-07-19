@@ -5,6 +5,10 @@
 */
 
 /* Add shadow effect to main wrapper, no -webkit or -moz vendor here, plz */
+body, input, textarea {
+	font-family: "Helvetica Neue", Helvetica, Arial, STHeiti, "Microsoft YaHei", "Hiragino Kaku Gothic Pro", sans-serif;
+}
+
 #page {
 	box-shadow: rgba(0, 0, 0, .1) 0 5px 20px;
 }
@@ -24,28 +28,28 @@
 	box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
 }
 
-/* The headr is too fucking BIG */
+/* The headr is too FUCKING BIG */
 #site-title {
 	padding: 1.5em 0 0;
 }
 
-/* The headr is too fucking BIG */
+/* The headr is too FUCKING BIG */
 #site-description {
 	margin-bottom: 1.3em;
 }
 
-/* The headr is too fucking BIG */
+/* The headr is too FUCKING BIG */
 #branding #searchform,
 .one-column #branding #searchform {
 	top: 1.8em;
 }
 
-/* The headr is too fucking BIG */
+/* The headr is too FUCKING BIG */
 #branding .with-image #searchform {
 	top: auto;
 }
 
-/* The headr is too fucking BIG */
+/* The headr is too FUCKING BIG */
 #site-title a {
 	font-size: 20px;
 /*	font-weight: normal;*/
