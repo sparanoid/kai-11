@@ -69,7 +69,7 @@ img.avatar {
    Although in WordPress 3.1, images uploaded through built-in and inserted via its
    media manager can have currect width, but hard coded images still need this. 
 
-   Update: in 3.2 RC2 no longer need workaround for images, but video does.
+   Update: in 3.2 no longer need workaround for images, but video does.
 */
 .entry-content video,
 .comment-content video,
@@ -91,4 +91,11 @@ pre {
 /* Try to prevent layout breakers */
 .comment-content {
 	word-wrap: break-word;
+}
+
+/* Make sure the logo and search form [del]don't collide[/del] cleverer than the original */
+@media (max-width: 650px) {
+	#branding .with-image #searchform {
+		top: 2.4em !important;
+	}
 }
