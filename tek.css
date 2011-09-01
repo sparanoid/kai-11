@@ -77,6 +77,17 @@ img.avatar {
 	max-width: 97.5%;
 }
 
+/* It's a bug, this is only a workaround */
+.indexed.format-image div.entry-meta {
+	display: block;
+}
+
+/* Set same font size and line height as what homepage looks like */
+.singular .entry-title {
+	font-size: 26px;
+	line-height: 1.5em;
+}
+
 /* Better code wrapping in containter */
 code {
 	color: #784;
