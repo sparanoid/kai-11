@@ -152,13 +152,12 @@ pre {
 		-moz-column-count: 4;
 		column-count: 4;
 	}
-
-	ul.children {
-		margin-left: 0 !important;
-		-webkit-column-count: 0;
-		-moz-column-count: 0;
-		column-count: 0;
-	}
+		ul.children {
+			margin-left: 0 !important;
+			-webkit-column-count: 0;
+			-moz-column-count: 0;
+			column-count: 0;
+		}
 
 	/* 
 		Make sure the logo and search form [del]don't collide[/del] cleverer
@@ -192,13 +191,12 @@ pre {
 			-moz-column-count: 3;
 			column-count: 3;
 		}
-
-	ul.children {
-		margin-left: 0 !important;
-		-webkit-column-count: 0;
-		-moz-column-count: 0;
-		column-count: 0;
-	}
+		ul.children {
+			margin-left: 0 !important;
+			-webkit-column-count: 0;
+			-moz-column-count: 0;
+			column-count: 0;
+		}
 
 	/* Fix search box position without header image and title */
 	/* I'M HOT */
@@ -230,11 +228,10 @@ pre {
 			-moz-column-count: 2;
 			column-count: 2;
 		}
-
-	ul.children {
-		margin-left: 0 !important;
-		-webkit-column-count: 0;
-		-moz-column-count: 0;
-		column-count: 0;
-	}
+		ul.children {
+			margin-left: 0 !important;
+			-webkit-column-count: 0;
+			-moz-column-count: 0;
+			column-count: 0;
+		}
 }
