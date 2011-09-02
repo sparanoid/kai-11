@@ -11,8 +11,11 @@ Tags: dark, light, white, black, gray, one-column, two-columns, left-sidebar, ri
 Template: twentyeleven
 */
 
-/* Basic styles from original Twenty Eleven. */
+/* Basic style from original Twenty Eleven. */
 @import url("../twentyeleven/style.css");
 
-/* Basic styles for Twenty Eleven Kai. */
+/* Basic style for Twenty Eleven Kai. */
 @import url("tek.min.css") screen;
+
+/* Debug style for Twenty Eleven Kai. */
+/*@import url("tek.css") screen;*/
