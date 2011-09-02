@@ -122,6 +122,11 @@ pre {
 	Better look for sidebar widgets on small screens, most of the following 
 	crappy shit is about making the world more beautiful.
 */
+.one-column .widget_twentyeleven_ephemera ol {
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+}
 .one-column #archives ul,
 .one-column #meta ul,
 .one-column .widget_pages ul,
@@ -141,6 +146,11 @@ pre {
 	}
 
 @media (max-width: 800px) {
+	.widget_twentyeleven_ephemera ol {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+	}
 	#archives ul,
 	#meta ul,
 	.widget_pages ul,
@@ -206,6 +216,11 @@ pre {
 }
 
 @media (max-width: 450px) {
+	.widget_twentyeleven_ephemera ol {
+		-webkit-column-count: 0;
+		-moz-column-count: 0;
+		column-count: 0;
+	}
 	#archives ul,
 	#meta ul,
 	.widget_pages ul,
