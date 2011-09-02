@@ -113,10 +113,17 @@ pre {
 	word-wrap: break-word;
 }
 
+/* Fix search box position with header image but without title */
+#branding .only-search + #access div {
+	padding-right: 0;
+}
+
 /*
 	Better look for sidebar widgets on small screens, most of the following 
 	crappy shit is about making the world more beautiful.
 */
+.one-column #archives ul,
+.one-column #meta ul,
 .one-column .widget_pages ul,
 .one-column .widget_archive ul,
 .one-column .widget_categories ul,
@@ -134,6 +141,8 @@ pre {
 	}
 
 @media (max-width: 800px) {
+	#archives ul,
+	#meta ul,
 	.widget_pages ul,
 	.widget_archive ul,
 	.widget_categories ul,
@@ -143,34 +152,6 @@ pre {
 		-moz-column-count: 4;
 		column-count: 4;
 	}
-
-	ul.children {
-		margin-left: 0 !important;
-		-webkit-column-count: 0;
-		-moz-column-count: 0;
-		column-count: 0;
-	}
-}
-
-@media (max-width: 650px) {
-	.widget_pages ul,
-	.widget_archive ul,
-	.widget_categories ul,
-	.widget_links ul,
-	.widget_meta ul {
-		-webkit-column-count: 3;
-		-moz-column-count: 3;
-		column-count: 3;
-	}
-		.one-column .widget_pages ul,
-		.one-column .widget_archive ul,
-		.one-column .widget_categories ul,
-		.one-column .widget_links ul,
-		.one-column .widget_meta ul {
-			-webkit-column-count: 3;
-			-moz-column-count: 3;
-			column-count: 3;
-		}
 
 	ul.children {
 		margin-left: 0 !important;
@@ -188,7 +169,47 @@ pre {
 	}
 }
 
+@media (max-width: 650px) {
+	#archives ul,
+	#meta ul,
+	.widget_pages ul,
+	.widget_archive ul,
+	.widget_categories ul,
+	.widget_links ul,
+	.widget_meta ul {
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		column-count: 3;
+	}
+		.one-column #archives ul,
+		.one-column #meta ul,
+		.one-column .widget_pages ul,
+		.one-column .widget_archive ul,
+		.one-column .widget_categories ul,
+		.one-column .widget_links ul,
+		.one-column .widget_meta ul {
+			-webkit-column-count: 3;
+			-moz-column-count: 3;
+			column-count: 3;
+		}
+
+	ul.children {
+		margin-left: 0 !important;
+		-webkit-column-count: 0;
+		-moz-column-count: 0;
+		column-count: 0;
+	}
+
+	/* Fix search box position without header image and title */
+	/* I'M HOT */
+	#branding hgroup + .only-search {
+		display: none;
+	}
+}
+
 @media (max-width: 450px) {
+	#archives ul,
+	#meta ul,
 	.widget_pages ul,
 	.widget_archive ul,
 	.widget_categories ul,
@@ -198,6 +219,8 @@ pre {
 		-moz-column-count: 2;
 		column-count: 2;
 	}
+		.one-column #archives ul,
+		.one-column #meta ul,
 		.one-column .widget_pages ul,
 		.one-column .widget_archive ul,
 		.one-column .widget_categories ul,
