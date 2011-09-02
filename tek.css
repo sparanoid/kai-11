@@ -65,11 +65,12 @@ img.avatar {
 }
 
 /*
-   Make sure videos and images that larger than container width display correctly. 
-   Although in WordPress 3.1, images uploaded through built-in and inserted via its
-   media manager can have currect width, but hard coded images still need this. 
+	Make sure videos and images that larger than container width display 
+	correctly. Although in WordPress 3.1, images uploaded through built-in 
+	and inserted via its media manager can have currect width, but hard 
+	coded images still need this. 
 
-   Update: in 3.2 no longer need workaround for images, but video does.
+	Update: in 3.2 no longer need workaround for images, but video does.
 */
 .entry-content video,
 .comment-content video,
@@ -81,6 +82,19 @@ img.avatar {
 .singular .entry-title {
 	font-size: 30px;
 	line-height: 1.5em;
+}
+
+/* Better look for feed list */
+.rss-date {
+	color: #fff;
+	background: #ccc;
+	font-size: 10px;
+	font-weight: normal;
+	padding: 1px 4px;
+	border-radius: 2px;
+	-webkit-box-decoration-break: clone;
+	-moz-box-decoration-break: clone;
+	box-decoration-break: clone;
 }
 
 /* Better code wrapping in containter */
@@ -99,9 +113,105 @@ pre {
 	word-wrap: break-word;
 }
 
-/* Make sure the logo and search form [del]don't collide[/del] cleverer than the original */
+/*
+	Better look for sidebar widgets on small screens, most of the following 
+	crappy shit is about making the world more beautiful.
+*/
+.one-column .widget_pages ul,
+.one-column .widget_archive ul,
+.one-column .widget_categories ul,
+.one-column .widget_links ul,
+.one-column .widget_meta ul {
+	-webkit-column-count: 4;
+	-moz-column-count: 4;
+	column-count: 4;
+}
+	ul.children {
+		margin-left: 0 !important;
+		-webkit-column-count: 0;
+		-moz-column-count: 0;
+		column-count: 0;
+	}
+
+@media (max-width: 800px) {
+	.widget_pages ul,
+	.widget_archive ul,
+	.widget_categories ul,
+	.widget_links ul,
+	.widget_meta ul {
+		-webkit-column-count: 4;
+		-moz-column-count: 4;
+		column-count: 4;
+	}
+
+	ul.children {
+		margin-left: 0 !important;
+		-webkit-column-count: 0;
+		-moz-column-count: 0;
+		column-count: 0;
+	}
+}
+
 @media (max-width: 650px) {
+	.widget_pages ul,
+	.widget_archive ul,
+	.widget_categories ul,
+	.widget_links ul,
+	.widget_meta ul {
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		column-count: 3;
+	}
+		.one-column .widget_pages ul,
+		.one-column .widget_archive ul,
+		.one-column .widget_categories ul,
+		.one-column .widget_links ul,
+		.one-column .widget_meta ul {
+			-webkit-column-count: 3;
+			-moz-column-count: 3;
+			column-count: 3;
+		}
+
+	ul.children {
+		margin-left: 0 !important;
+		-webkit-column-count: 0;
+		-moz-column-count: 0;
+		column-count: 0;
+	}
+
+	/* 
+		Make sure the logo and search form [del]don't collide[/del] cleverer
+		than the original.
+	*/
 	#branding .with-image #searchform {
 		top: 2.4em !important;
+	}
+}
+
+@media (max-width: 450px) {
+	.widget_pages ul,
+	.widget_archive ul,
+	.widget_categories ul,
+	.widget_links ul,
+	.widget_meta ul {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+	}
+		.one-column .widget_pages ul,
+		.one-column .widget_archive ul,
+		.one-column .widget_categories ul,
+		.one-column .widget_links ul,
+		.one-column .widget_meta ul {
+			-webkit-column-count: 2;
+			-moz-column-count: 2;
+			column-count: 2;
+		}
+
+	ul.children {
+		margin-left: 0 !important;
+		-webkit-column-count: 0;
+		-moz-column-count: 0;
+		column-count: 0;
 	}
 }
