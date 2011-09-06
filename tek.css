@@ -123,6 +123,22 @@ pre {
   background: #fcfcfc;
 }
 
+/* Well styles from Bootstrap by Twitter */
+.well {
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+  padding: 19px;
+  min-height: 20px;
+  border: 1px solid #eee;
+  border: 1px solid rgba(0, 0, 0, .05);
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+
 /*
   Better look for sidebar widgets on small screens, most of the following 
   crappy shit is about making the world more beautiful.
