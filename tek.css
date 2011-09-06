@@ -1,131 +1,136 @@
 /*!
-	Twenty Eleven Kai by Sparanoid
-	Read more: http://nio2.com/resources/twentyeleven-kai/
+  Twenty Eleven Kai by Sparanoid
+  Read more: http://ray.io/resources/twentyeleven-kai/
 
 */
 
 /* Add shadow effect to main wrapper, no -webkit or -moz vendor here, plz */
 body, input, textarea {
-	font-family: "Helvetica Neue", Helvetica, Arial, STHeiti, "Microsoft YaHei", "Hiragino Kaku Gothic Pro", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, STHeiti, "Microsoft YaHei", "Hiragino Kaku Gothic Pro", sans-serif;
 }
 
 #page {
-	box-shadow: rgba(0, 0, 0, .1) 0 5px 20px;
+  box-shadow: rgba(0, 0, 0, .1) 0 5px 20px;
 }
 
 /* No more stupid shadows and gradient */
 #access {
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
-	background: #000;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background: #000;
 }
 
 /* Change shadows apperance */
 #access ul ul {
-	-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
-	-moz-box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
-	box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
 }
 
 /* The headr is too FUCKING BIG */
 #site-title {
-	padding: 1.5em 0 0;
+  padding: 1.5em 0 0;
 }
 
 /* The headr is too FUCKING BIG */
 #site-description {
-	margin-bottom: 1.3em;
+  margin-bottom: 1.3em;
 }
 
 /* The headr is too FUCKING BIG */
 #branding #searchform,
 .one-column #branding #searchform {
-	top: 1.8em;
+  top: 1.8em;
 }
 
 /* The headr is too FUCKING BIG */
 #branding .with-image #searchform {
-	top: auto;
+  top: auto;
 }
 
 /* The headr is too FUCKING BIG */
 #site-title a {
-	font-size: 20px;
-/*	font-weight: normal;*/
-	line-height: 1;
+  font-size: 20px;
+/*  font-weight: normal;*/
+  line-height: 1;
 }
 
 /* No shadows and white background for user avatar */
 img.avatar {
-	-webkit-box-shadow: none !important;
-	-moz-box-shadow: none !important;
-	box-shadow: none !important;
-	background: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  background: none !important;
 }
 
 /*
-	Make sure videos and images that larger than container width display 
-	correctly. Although in WordPress 3.1, images uploaded through built-in 
-	and inserted via its media manager can have currect width, but hard 
-	coded images still need this. 
+  Make sure videos and images that larger than container width display 
+  correctly. Although in WordPress 3.1, images uploaded through built-in 
+  and inserted via its media manager can have currect width, but hard 
+  coded images still need this. 
 
-	Update: in 3.2 no longer need workaround for images, but video does.
+  Update: in 3.2 no longer need workaround for images, but video does.
 */
 .entry-content video,
 .comment-content video,
 .widget video {
-	max-width: 97.5%;
+  max-width: 97.5%;
 }
 
 /* Set same font size and line height as what homepage looks like */
 .singular .entry-title {
-	font-size: 30px;
-	line-height: 1.5em;
+  font-size: 30px;
+  line-height: 1.5em;
 }
 
 /* Better look for feed list */
 .rss-date {
-	color: #fff;
-	background: #ccc;
-	font-size: 10px;
-	font-weight: normal;
-	padding: 1px 4px;
-	border-radius: 2px;
-	-webkit-box-decoration-break: clone;
-	-moz-box-decoration-break: clone;
-	box-decoration-break: clone;
+  color: #fff;
+  background: #ccc;
+  font-size: 10px;
+  font-weight: normal;
+  padding: 1px 4px;
+  border-radius: 2px;
+  -webkit-box-decoration-break: clone;
+  -moz-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 /* Better code wrapping in containter */
 code {
-	color: #784;
-	word-break: break-all;
-	word-wrap: break-word;
+  color: #784;
+  word-break: break-all;
+  word-wrap: break-word;
 }
 
 pre {
-	overflow: auto;
+  overflow: auto;
 }
 
 /* Try to prevent layout breakers */
 .comment-content {
-	word-wrap: break-word;
+  word-wrap: break-word;
 }
 
 /* Fix search box position with header image but without title */
 #branding .only-search + #access div {
-	padding-right: 0;
+  padding-right: 0;
+}
+
+/* Add a bit background color for widgets in footer */
+#colophon {
+  background: #fcfcfc;
 }
 
 /*
-	Better look for sidebar widgets on small screens, most of the following 
-	crappy shit is about making the world more beautiful.
+  Better look for sidebar widgets on small screens, most of the following 
+  crappy shit is about making the world more beautiful.
 */
 .one-column .widget_twentyeleven_ephemera ol {
-	-webkit-column-count: 2;
-	-moz-column-count: 2;
-	column-count: 2;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
 }
 .one-column #archives ul,
 .one-column #meta ul,
@@ -134,119 +139,119 @@ pre {
 .one-column .widget_categories ul,
 .one-column .widget_links ul,
 .one-column .widget_meta ul {
-	-webkit-column-count: 4;
-	-moz-column-count: 4;
-	column-count: 4;
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
 }
-	ul.children {
-		margin-left: 0 !important;
-		-webkit-column-count: 0;
-		-moz-column-count: 0;
-		column-count: 0;
-	}
+  ul.children {
+    margin-left: 0 !important;
+    -webkit-column-count: 0;
+    -moz-column-count: 0;
+    column-count: 0;
+  }
 
 @media (max-width: 800px) {
-	.widget_twentyeleven_ephemera ol {
-		-webkit-column-count: 2;
-		-moz-column-count: 2;
-		column-count: 2;
-	}
-	#archives ul,
-	#meta ul,
-	.widget_pages ul,
-	.widget_archive ul,
-	.widget_categories ul,
-	.widget_links ul,
-	.widget_meta ul {
-		-webkit-column-count: 4;
-		-moz-column-count: 4;
-		column-count: 4;
-	}
-		ul.children {
-			margin-left: 0 !important;
-			-webkit-column-count: 0;
-			-moz-column-count: 0;
-			column-count: 0;
-		}
+  .widget_twentyeleven_ephemera ol {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+  #archives ul,
+  #meta ul,
+  .widget_pages ul,
+  .widget_archive ul,
+  .widget_categories ul,
+  .widget_links ul,
+  .widget_meta ul {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+  }
+    ul.children {
+      margin-left: 0 !important;
+      -webkit-column-count: 0;
+      -moz-column-count: 0;
+      column-count: 0;
+    }
 
-	/* 
-		Make sure the logo and search form [del]don't collide[/del] cleverer
-		than the original.
-	*/
-	#branding .with-image #searchform {
-		top: 2.4em !important;
-	}
+  /* 
+    Make sure the logo and search form [del]don't collide[/del] cleverer
+    than the original.
+  */
+  #branding .with-image #searchform {
+    top: 2.4em !important;
+  }
 }
 
 @media (max-width: 650px) {
-	#archives ul,
-	#meta ul,
-	.widget_pages ul,
-	.widget_archive ul,
-	.widget_categories ul,
-	.widget_links ul,
-	.widget_meta ul {
-		-webkit-column-count: 3;
-		-moz-column-count: 3;
-		column-count: 3;
-	}
-		.one-column #archives ul,
-		.one-column #meta ul,
-		.one-column .widget_pages ul,
-		.one-column .widget_archive ul,
-		.one-column .widget_categories ul,
-		.one-column .widget_links ul,
-		.one-column .widget_meta ul {
-			-webkit-column-count: 3;
-			-moz-column-count: 3;
-			column-count: 3;
-		}
-		ul.children {
-			margin-left: 0 !important;
-			-webkit-column-count: 0;
-			-moz-column-count: 0;
-			column-count: 0;
-		}
+  #archives ul,
+  #meta ul,
+  .widget_pages ul,
+  .widget_archive ul,
+  .widget_categories ul,
+  .widget_links ul,
+  .widget_meta ul {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+    .one-column #archives ul,
+    .one-column #meta ul,
+    .one-column .widget_pages ul,
+    .one-column .widget_archive ul,
+    .one-column .widget_categories ul,
+    .one-column .widget_links ul,
+    .one-column .widget_meta ul {
+      -webkit-column-count: 3;
+      -moz-column-count: 3;
+      column-count: 3;
+    }
+    ul.children {
+      margin-left: 0 !important;
+      -webkit-column-count: 0;
+      -moz-column-count: 0;
+      column-count: 0;
+    }
 
-	/* Fix search box position without header image and title */
-	/* I'M HOT */
-	#branding hgroup + .only-search {
-		display: none;
-	}
+  /* Fix search box position without header image and title */
+  /* I'M HOT */
+  #branding hgroup + .only-search {
+    display: none;
+  }
 }
 
 @media (max-width: 450px) {
-	.widget_twentyeleven_ephemera ol {
-		-webkit-column-count: 0;
-		-moz-column-count: 0;
-		column-count: 0;
-	}
-	#archives ul,
-	#meta ul,
-	.widget_pages ul,
-	.widget_archive ul,
-	.widget_categories ul,
-	.widget_links ul,
-	.widget_meta ul {
-		-webkit-column-count: 2;
-		-moz-column-count: 2;
-		column-count: 2;
-	}
-		.one-column #archives ul,
-		.one-column #meta ul,
-		.one-column .widget_pages ul,
-		.one-column .widget_archive ul,
-		.one-column .widget_categories ul,
-		.one-column .widget_links ul,
-		.one-column .widget_meta ul {
-			-webkit-column-count: 2;
-			-moz-column-count: 2;
-			column-count: 2;
-		}
-		ul.children {
-			margin-left: 0 !important;
-			-webkit-column-count: 0;
-			-moz-column-count: 0;
-			column-count: 0;
-		}
+  .widget_twentyeleven_ephemera ol {
+    -webkit-column-count: 0;
+    -moz-column-count: 0;
+    column-count: 0;
+  }
+  #archives ul,
+  #meta ul,
+  .widget_pages ul,
+  .widget_archive ul,
+  .widget_categories ul,
+  .widget_links ul,
+  .widget_meta ul {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+    .one-column #archives ul,
+    .one-column #meta ul,
+    .one-column .widget_pages ul,
+    .one-column .widget_archive ul,
+    .one-column .widget_categories ul,
+    .one-column .widget_links ul,
+    .one-column .widget_meta ul {
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2;
+    }
+    ul.children {
+      margin-left: 0 !important;
+      -webkit-column-count: 0;
+      -moz-column-count: 0;
+      column-count: 0;
+    }
 }
