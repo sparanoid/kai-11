@@ -28,34 +28,6 @@ body, input, textarea {
           box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
 }
 
-/* The headr is too FUCKING BIG */
-#site-title {
-  padding: 1.5em 0 0;
-}
-
-/* The headr is too FUCKING BIG */
-#site-description {
-  margin-bottom: 1.3em;
-}
-
-/* The headr is too FUCKING BIG */
-#branding #searchform,
-.one-column #branding #searchform {
-  top: 1.8em;
-}
-
-/* The headr is too FUCKING BIG */
-#branding .with-image #searchform {
-  top: auto;
-}
-
-/* The headr is too FUCKING BIG */
-#site-title a {
-  font-size: 20px;
-/*  font-weight: normal;*/
-  line-height: 1;
-}
-
 /* No shadows and white background for user avatar */
 img.avatar {
   -webkit-box-shadow: none !important;
@@ -63,6 +35,17 @@ img.avatar {
           box-shadow: none !important;
   background: none !important;
 }
+
+/* Better menu font styles */
+.current_page_item {
+  background: #fff;
+}
+  #access .current_page_item a {
+    color: #111;
+  }
+  #access .current_page_item > a, #access .current_page_ancestor > a {
+    font-weight: inherit;
+  }
 
 /*
   Make sure videos and images that larger than container width display 
@@ -103,7 +86,7 @@ img.avatar {
   background: #eee;
 }
   #respond input[type="text"], #respond textarea {
-    border-color: #c;
+    border-color: #ddd;
     -webkit-box-shadow: none;
        -moz-box-shadow: none;
             box-shaodw: none;
@@ -237,7 +220,13 @@ pre {
     than the original.
   */
   #branding .with-image #searchform {
-    top: 2.4em !important;
+    top: auto !important;
+  }
+  #branding .only-search #s {
+    width: 0;
+  }
+  #branding .only-search #s:focus {
+    width: 85%;
   }
 }
 
