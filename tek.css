@@ -6,7 +6,7 @@
 
 /* Add shadow effect to main wrapper, no -webkit or -moz vendor here, plz */
 body, input, textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, STHeiti, "Microsoft YaHei", "Hiragino Kaku Gothic Pro", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Kaku Gothic Pro", "Microsoft YaHei", sans-serif;
 }
 
 #page {
@@ -16,16 +16,16 @@ body, input, textarea {
 /* No more stupid shadows and gradient */
 #access {
   -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
   background: #000;
 }
 
 /* Change shadows apperance */
 #access ul ul {
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
-  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
-  box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+     -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
 }
 
 /* The headr is too FUCKING BIG */
@@ -59,8 +59,8 @@ body, input, textarea {
 /* No shadows and white background for user avatar */
 img.avatar {
   -webkit-box-shadow: none !important;
-  -moz-box-shadow: none !important;
-  box-shadow: none !important;
+     -moz-box-shadow: none !important;
+          box-shadow: none !important;
   background: none !important;
 }
 
@@ -84,6 +84,45 @@ img.avatar {
   line-height: 1.5em;
 }
 
+/* Thinner */
+.entry-title,
+.singular .entry-title {
+  font-weight: 200;
+}
+
+/* Lighter background for image post type */
+.indexed.format-image footer.entry-meta {
+  background: #eee;
+}
+  .indexed.format-image footer.entry-meta a:hover {
+    color: inherit;
+  }
+
+/* Better respond styles */
+#respond {
+  background: #eee;
+}
+  #respond input[type="text"], #respond textarea {
+    border-color: #c;
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shaodw: none;
+  }
+  #respond .comment-form-author label, #respond .comment-form-email label, #respond .comment-form-url label, #respond .comment-form-comment label {
+    background: #ddd;
+    padding: 7px 10px;
+    font-size: 14px;
+    top: 48px;
+    left: 4px;
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shaodw: none;
+  }
+
+  #respond .comment-form-author .required, #respond .comment-form-email .required {
+    top: 56px;
+  }
+
 /* Better look for feed list */
 .rss-date {
   color: #fff;
@@ -93,8 +132,8 @@ img.avatar {
   padding: 1px 4px;
   border-radius: 2px;
   -webkit-box-decoration-break: clone;
-  -moz-box-decoration-break: clone;
-  box-decoration-break: clone;
+     -moz-box-decoration-break: clone;
+          box-decoration-break: clone;
 }
 
 /* Better code wrapping in containter */
@@ -148,8 +187,8 @@ pre {
 */
 .one-column .widget_twentyeleven_ephemera ol {
   -webkit-column-count: 2;
-  -moz-column-count: 2;
-  column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
 }
 .one-column #archives ul,
 .one-column #meta ul,
@@ -159,21 +198,21 @@ pre {
 .one-column .widget_links ul,
 .one-column .widget_meta ul {
   -webkit-column-count: 4;
-  -moz-column-count: 4;
-  column-count: 4;
+     -moz-column-count: 4;
+          column-count: 4;
 }
   ul.children {
     margin-left: 0 !important;
     -webkit-column-count: 0;
-    -moz-column-count: 0;
-    column-count: 0;
+       -moz-column-count: 0;
+            column-count: 0;
   }
 
 @media (max-width: 800px) {
   .widget_twentyeleven_ephemera ol {
     -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
   }
   #archives ul,
   #meta ul,
@@ -183,14 +222,14 @@ pre {
   .widget_links ul,
   .widget_meta ul {
     -webkit-column-count: 4;
-    -moz-column-count: 4;
-    column-count: 4;
+       -moz-column-count: 4;
+            column-count: 4;
   }
     ul.children {
       margin-left: 0 !important;
       -webkit-column-count: 0;
-      -moz-column-count: 0;
-      column-count: 0;
+         -moz-column-count: 0;
+              column-count: 0;
     }
 
   /* 
@@ -211,8 +250,8 @@ pre {
   .widget_links ul,
   .widget_meta ul {
     -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
+       -moz-column-count: 3;
+            column-count: 3;
   }
     .one-column #archives ul,
     .one-column #meta ul,
@@ -222,14 +261,14 @@ pre {
     .one-column .widget_links ul,
     .one-column .widget_meta ul {
       -webkit-column-count: 3;
-      -moz-column-count: 3;
-      column-count: 3;
+         -moz-column-count: 3;
+              column-count: 3;
     }
     ul.children {
       margin-left: 0 !important;
       -webkit-column-count: 0;
-      -moz-column-count: 0;
-      column-count: 0;
+         -moz-column-count: 0;
+              column-count: 0;
     }
 
   /* Fix search box position without header image and title */
@@ -242,8 +281,8 @@ pre {
 @media (max-width: 450px) {
   .widget_twentyeleven_ephemera ol {
     -webkit-column-count: 0;
-    -moz-column-count: 0;
-    column-count: 0;
+       -moz-column-count: 0;
+            column-count: 0;
   }
   #archives ul,
   #meta ul,
@@ -253,8 +292,8 @@ pre {
   .widget_links ul,
   .widget_meta ul {
     -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
   }
     .one-column #archives ul,
     .one-column #meta ul,
@@ -264,13 +303,13 @@ pre {
     .one-column .widget_links ul,
     .one-column .widget_meta ul {
       -webkit-column-count: 2;
-      -moz-column-count: 2;
-      column-count: 2;
+         -moz-column-count: 2;
+              column-count: 2;
     }
     ul.children {
       margin-left: 0 !important;
       -webkit-column-count: 0;
-      -moz-column-count: 0;
-      column-count: 0;
+         -moz-column-count: 0;
+              column-count: 0;
     }
 }
