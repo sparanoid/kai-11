@@ -9,8 +9,8 @@ body, input, textarea {
   font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Kaku Gothic Pro", "Microsoft YaHei", sans-serif;
 }
 
-#page {
-  box-shadow: rgba(0, 0, 0, .1) 0 5px 20px;
+#branding {
+  border-top: none;
 }
 
 /* No more stupid shadows and gradient */
