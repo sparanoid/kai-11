@@ -60,6 +60,10 @@ img.avatar {
     background:         linear-gradient(#eee, #fff);
   }
 
+.commentlist > li:before {
+  display: none;
+}
+
 /*
   Make sure videos and images that larger than container width display 
   correctly. Although in WordPress 3.1, images uploaded through built-in 
