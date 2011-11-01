@@ -9,8 +9,14 @@ body, input, textarea {
   font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Kaku Gothic Pro", "Microsoft YaHei", sans-serif;
 }
 
+/* It looks terrible */
 #branding {
   border-top: none;
+}
+
+/* Remove search input when .one-column */
+.one-column .only-search {
+  display: none;
 }
 
 /* No more stupid shadows and gradient */
@@ -36,8 +42,8 @@ img.avatar {
   background: none !important;
 }
 
-/* Better menu font styles */
-.current_page_item {
+/* Better menu styles */
+#access .current_page_item {
   background: #fff;
 }
   #access .current_page_item a {
@@ -45,6 +51,13 @@ img.avatar {
   }
   #access .current_page_item > a, #access .current_page_ancestor > a {
     font-weight: inherit;
+  }
+  #access li:hover > a,
+  #access a:focus {
+    background: #fff;
+    background: -webkit-linear-gradient(#eee, #fff);
+    background:    -moz-linear-gradient(#eee, #fff);
+    background:         linear-gradient(#eee, #fff);
   }
 
 /*
