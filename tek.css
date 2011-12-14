@@ -5,19 +5,13 @@
 */
 
 /* Add shadow effect to main wrapper, no -webkit or -moz vendor here, plz */
-body, input, textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Kaku Gothic Pro", "Microsoft YaHei", sans-serif;
-}
+body, input, textarea { font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Kaku Gothic Pro", "Microsoft YaHei", sans-serif; }
 
 /* It looks terrible */
-#branding {
-  border-top: none;
-}
+#branding { border-top: none; }
 
 /* Remove search input when .one-column */
-.one-column .only-search {
-  display: none;
-}
+.one-column .only-search { display: none; }
 
 /* No more stupid shadows and gradient */
 #access {
@@ -35,15 +29,9 @@ body, input, textarea {
 }
 
 /* Better menu styles */
-#access .current_page_item {
-  background: #fff;
-}
-  #access .current_page_item a {
-    color: #111;
-  }
-  #access .current_page_item > a, #access .current_page_ancestor > a {
-    font-weight: inherit;
-  }
+#access .current_page_item { background: #fff; }
+  #access .current_page_item a { color: #111; }
+  #access .current_page_item > a, #access .current_page_ancestor > a { font-weight: inherit; }
   #access li:hover > a,
   #access a:focus {
     background: #fff;
@@ -53,9 +41,7 @@ body, input, textarea {
   }
 
 /* Better intro styles */
-article.intro {
-  margin: -2em -9% 1.625em;
-}
+article.intro { margin: -2em -9% 1.625em; }
 
 /* Remove arrow for comments in one column */
 .commentlist > li:before { display: none; }
@@ -81,10 +67,7 @@ img.avatar {
 .widget video { max-width: 97.5%; }
 
 /* Set same font size and line height as what homepage looks like */
-.singular .entry-title {
-  font-size: 30px;
-  line-height: 1.5em;
-}
+.singular .entry-title { font-size: 30px; line-height: 1.5em; }
 
 /* Thinner */
 .entry-title,
@@ -170,9 +153,7 @@ pre { overflow: auto; }
 }
 
 /* Better style for Jetpack by WordPress.com */
-#respond p.comment-subscription-form {
-  margin: 0;
-}
+#respond p.comment-subscription-form { margin: 0; }
 
 /*
   Better look for sidebar widgets on small screens, most of the following 
@@ -229,15 +210,9 @@ pre { overflow: auto; }
     Make sure the logo and search form [del]don't collide[/del] cleverer
     than the original.
   */
-  #branding .with-image #searchform {
-    top: auto !important;
-  }
-  #branding .only-search #s {
-    width: 0;
-  }
-  #branding .only-search #s:focus {
-    width: 85%;
-  }
+  #branding .with-image #searchform { top: auto !important; }
+  #branding .only-search #s { width: 0; }
+  #branding .only-search #s:focus { width: 85%; }
 }
 
 @media (max-width: 650px) {
@@ -272,9 +247,7 @@ pre { overflow: auto; }
 
   /* Fix search box position without header image and title */
   /* I'M HOT */
-  #branding hgroup + .only-search {
-    display: none;
-  }
+  #branding hgroup + .only-search { display: none; }
 }
 
 @media (max-width: 450px) {
