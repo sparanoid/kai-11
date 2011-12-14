@@ -58,9 +58,7 @@ article.intro {
 }
 
 /* Remove arrow for comments in one column */
-.commentlist > li:before {
-  display: none;
-}
+.commentlist > li:before { display: none; }
 
 /* No shadows and white background for user avatar */
 img.avatar {
@@ -80,9 +78,7 @@ img.avatar {
 */
 .entry-content video,
 .comment-content video,
-.widget video {
-  max-width: 97.5%;
-}
+.widget video { max-width: 97.5%; }
 
 /* Set same font size and line height as what homepage looks like */
 .singular .entry-title {
@@ -92,22 +88,14 @@ img.avatar {
 
 /* Thinner */
 .entry-title,
-.singular .entry-title {
-  font-weight: 200;
-}
+.singular .entry-title { font-weight: 200; }
 
 /* Lighter background for image post type */
-.indexed.format-image footer.entry-meta {
-  background: #eee;
-}
-  .indexed.format-image footer.entry-meta a:hover {
-    color: inherit;
-  }
+.indexed.format-image footer.entry-meta { background: #eee; }
+  .indexed.format-image footer.entry-meta a:hover { color: inherit; }
 
 /* Better respond styles */
-#respond {
-  background: #eee;
-}
+#respond { background: #eee; }
   #respond input[type="text"], #respond textarea {
     border-color: #ddd;
     -webkit-box-shadow: none;
@@ -125,9 +113,7 @@ img.avatar {
             box-shaodw: none;
   }
 
-  #respond .comment-form-author .required, #respond .comment-form-email .required {
-    top: 56px;
-  }
+  #respond .comment-form-author .required, #respond .comment-form-email .required { top: 56px; }
 
 /* Better look for feed list */
 .rss-date {
@@ -149,19 +135,13 @@ code {
   word-wrap: break-word;
 }
 
-pre {
-  overflow: auto;
-}
+pre { overflow: auto; }
 
 /* Try to prevent layout breakers */
-.comment-content {
-  word-wrap: break-word;
-}
+.comment-content { word-wrap: break-word; }
 
 /* Fix search box position with header image but without title */
-#branding .only-search + #access div {
-  padding-right: 0;
-}
+#branding .only-search + #access div { padding-right: 0; }
 
 /* Pagination floating fix, your code really sucks */
 #nav-single .nav-previous { float: left; }
@@ -171,9 +151,7 @@ pre {
   Add a bit background color for widgets in footer, please not it doesn't 
   work with the dark mode yet.
 */
-#colophon {
-  background: #fcfcfc;
-}
+#colophon { background: #fcfcfc; }
 
 /* Well styles from Bootstrap by Twitter */
 .well {
