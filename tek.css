@@ -164,13 +164,8 @@ pre {
 }
 
 /* Pagination floating fix, your code really sucks */
-#nav-single .nav-previous {
-  float: left;
-}
-
-#nav-single .nav-next {
-  float: right;
-}
+#nav-single .nav-previous { float: left; }
+#nav-single .nav-next { float: right; }
 
 /* 
   Add a bit background color for widgets in footer, please not it doesn't 
