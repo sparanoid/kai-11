@@ -183,7 +183,8 @@ pre { overflow: auto; }
   }
 
 @media (max-width: 800px) {
-  .widget_twentyeleven_ephemera ol {
+  .widget_twentyeleven_ephemera ol,
+  .widget_recent_entries ul {
     -webkit-column-count: 2;
        -moz-column-count: 2;
             column-count: 2;
@@ -251,7 +252,8 @@ pre { overflow: auto; }
 }
 
 @media (max-width: 450px) {
-  .widget_twentyeleven_ephemera ol {
+  .widget_twentyeleven_ephemera ol,
+  .widget_recent_entries ul {
     -webkit-column-count: 0;
        -moz-column-count: 0;
             column-count: 0;
