@@ -15,7 +15,4 @@ Template: twentyeleven
 @import url("../twentyeleven/style.css");
 
 /* Basic style for Twenty Eleven Kai. */
-@import url("tek.min.css") screen;
-
-/* Debug style for Twenty Eleven Kai. */
-/*@import url("tek.css") screen;*/
+@import url("tek.css") screen;
