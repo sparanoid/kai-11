@@ -4,16 +4,16 @@
 /*!
 */
 
-/* Add shadow effect to main wrapper, no -webkit or -moz vendor here, plz */
+// Add shadow effect to main wrapper, no -webkit or -moz vendor here, plz
 body, input, textarea { font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Kaku Gothic Pro", "Microsoft YaHei", sans-serif; }
 
-/* It looks terrible */
+// It looks terrible
 #branding { border-top: none; }
 
-/* Remove search input when .one-column */
+// Remove search input when .one-column
 .one-column .only-search { display: none; }
 
-/* No more stupid shadows and gradient */
+// No more stupid shadows and gradient
 #access {
   -webkit-box-shadow: none;
      -moz-box-shadow: none;
@@ -21,14 +21,14 @@ body, input, textarea { font-family: "Helvetica Neue", Helvetica, Arial, "Hiragi
   background: #000;
 }
 
-/* Change shadows apperance for sub-menus */
+// Change shadows apperance for sub-menus
 #access ul ul {
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
      -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
           box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
 }
 
-/* Better menu styles */
+// Better menu styles
 #access .current_page_item { background: #fff; }
   #access .current_page_item a { color: #111; }
   #access .current_page_item > a, #access .current_page_ancestor > a { font-weight: inherit; }
@@ -40,13 +40,13 @@ body, input, textarea { font-family: "Helvetica Neue", Helvetica, Arial, "Hiragi
     background:         linear-gradient(#eee, #fff);
   }
 
-/* Better intro styles */
+// Better intro styles
 article.intro { margin: -2em -9% 1.625em; }
 
-/* Remove arrow for comments in one column */
+// Remove arrow for comments in one column
 .commentlist > li:before { display: none; }
 
-/* No shadows and white background for user avatar */
+// No shadows and white background for user avatar
 img.avatar {
   -webkit-box-shadow: none !important;
      -moz-box-shadow: none !important;
@@ -54,35 +54,30 @@ img.avatar {
   background: none !important;
 }
 
-/* Specified style fix for Gallery post type */
+// Specified style fix for Gallery post type
 article.intro p {
   margin-bottom: 1em;
 }
 
-/*
-  Make sure videos and images that larger than container width display 
-  correctly. Although in WordPress 3.1, images uploaded through built-in 
-  and inserted via its media manager can have currect width, but hard 
-  coded images still need this. 
+// Make sure videos and images that larger than container width display correctly. Although in WordPress 3.1, images uploaded through built-in and inserted via its media manager can have currect width, but hard coded images still need this. 
 
-  Update: in 3.2 no longer need workaround for images, but video does.
-*/
+// Update: in 3.2 no longer need workaround for images, but video does.
 .entry-content video,
 .comment-content video,
 .widget video { max-width: 97.5%; }
 
-/* Set same font size and line height as what homepage looks like */
+// Set same font size and line height as what homepage looks like
 .singular .entry-title { font-size: 30px; line-height: 1.5em; }
 
-/* Thinner */
+// Thinner
 .entry-title,
 .singular .entry-title { font-weight: 200; }
 
-/* Lighter background for image post type */
+// Lighter background for image post type
 .indexed.format-image footer.entry-meta { background: #eee; }
   .indexed.format-image footer.entry-meta a:hover { color: inherit; }
 
-/* Better respond styles */
+// Better respond styles
 #respond { background: #eee; }
   #respond input[type="text"], #respond textarea {
     border-color: #ddd;
@@ -103,7 +98,7 @@ article.intro p {
 
   #respond .comment-form-author .required, #respond .comment-form-email .required { top: 56px; }
 
-/* Better look for feed list */
+// Better look for feed list
 .rss-date {
   color: #fff;
   background: #ccc;
@@ -116,32 +111,40 @@ article.intro p {
           box-decoration-break: clone;
 }
 
-/* Better code wrapping in containter */
+// Better code wrapping in containter
 code {
   color: #784;
   word-break: break-all;
   word-wrap: break-word;
 }
 
+// Override WP Colored Coding Plugin styles
+.wp-cc {
+  pre {
+    word-wrap: normal;
+    code {
+      word-break: normal;
+      word-wrap: normal;
+    }
+  }
+}
+
 pre { overflow: auto; }
 
-/* Try to prevent layout breakers */
+// Try to prevent layout breakers
 .comment-content { word-wrap: break-word; }
 
-/* Fix search box position with header image but without title */
+// Fix search box position with header image but without title
 #branding .only-search + #access div { padding-right: 0; }
 
-/* Pagination floating fix, your code really sucks */
+// Pagination floating fix, your code really sucks
 #nav-single .nav-previous { float: left; }
 #nav-single .nav-next { float: right; }
 
-/* 
-  Add a bit background color for widgets in footer, please not it doesn't 
-  work with the dark mode yet.
-*/
+// Add a bit background color for widgets in footer, please not it doesn't work with the dark mode yet.
 #colophon { background: #fcfcfc; }
 
-/* Well styles from Bootstrap by Twitter */
+// Well styles from Bootstrap by Twitter
 .well {
   background-color: #f9f9f9;
   margin-bottom: 20px;
@@ -157,13 +160,10 @@ pre { overflow: auto; }
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
 }
 
-/* Better style for Jetpack by WordPress.com */
+// Better style for Jetpack by WordPress.com
 #respond p.comment-subscription-form { margin: 0; }
 
-/*
-  Better look for sidebar widgets on small screens, most of the following 
-  crappy shit is about making the world more beautiful.
-*/
+// Better look for sidebar widgets on small screens, most of the following crappy shit is about making the world more beautiful.
 .one-column .widget_twentyeleven_ephemera ol {
   -webkit-column-count: 2;
      -moz-column-count: 2;
@@ -212,10 +212,7 @@ pre { overflow: auto; }
               column-count: 0;
     }
 
-  /* 
-    Make sure the logo and search form [del]don't collide[/del] cleverer
-    than the original.
-  */
+  // Make sure the logo and search form [del]don't collide[/del] cleverer than the original.
   #branding .with-image #searchform { top: auto !important; }
   #branding .only-search #s { width: 0; }
   #branding .only-search #s:focus { width: 85%; }
@@ -251,8 +248,7 @@ pre { overflow: auto; }
               column-count: 0;
     }
 
-  /* Fix search box position without header image and title */
-  /* I'M HOT */
+  // Fix search box position without header image and title
   #branding hgroup + .only-search { display: none; }
 }
 
