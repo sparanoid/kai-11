@@ -13,7 +13,7 @@ function add_twentyeleven_credits() {
 
 add_action('twentyeleven_credits', 'add_twentyeleven_credits');
 
-/**s
+/**
  * Override Twenty Eleven stylesheet loading behavier and load Twenty Eleven Kai stylesheet
  *
  * @since Twenty Eleven Kai 1.5.1
