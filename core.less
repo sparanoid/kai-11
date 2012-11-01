@@ -64,7 +64,7 @@ article.intro p {
   margin-bottom: 1em;
 }
 
-// Make sure videos and images that larger than container width display correctly. Although in WordPress 3.1, images uploaded through built-in and inserted via its media manager can have currect width, but hard coded images still need this. 
+// Make sure videos and images that larger than container width display correctly. Although in WordPress 3.1, images uploaded through built-in and inserted via its media manager can have currect width, but hard coded images still need this.
 
 // Update: in 3.2 no longer need workaround for images, but video does.
 .entry-content video,
@@ -292,4 +292,50 @@ pre { overflow: auto; }
          -moz-column-count: 0;
               column-count: 0;
     }
+}
+
+/* =Infinity Styles
+-------------------------------------------------------------- */
+.infinite-scroll #main:after {
+	clear: both;
+	content: '';
+	display: block;
+}
+.infinite-scroll #content {
+	margin-bottom: 40px;
+}
+.infinite-scroll.neverending #content {
+	margin-bottom: 70px;
+}
+.infinite-scroll .infinite-wrap {
+	border-top: none;
+	padding-top: 0;
+}
+.infinite-scroll .infinite-wrap .hentry:last-child {
+	border-bottom: 1px solid #ddd;
+}
+.infinite-scroll .infinite-wrap:last-of-type .hentry:last-child {
+	border-bottom: none;
+}
+
+/**
+ * Elements to hide:
+ * (footer widgets, post navigation, regular footer)
+ */
+.infinite-scroll.neverending #colophon #supplementary,
+.infinite-scroll #nav-below,
+.infinite-scroll.neverending #colophon {
+	display: none;
+}
+
+/* Hooks to infinity-end body class to restore footer */
+.infinity-end.neverending #colophon {
+	display: block;
+}
+
+/* For responsive CSS */
+@media (max-width: 800px) {
+	.infinite-scroll #infinite-handle {
+		padding-bottom: 40px;
+	}
 }

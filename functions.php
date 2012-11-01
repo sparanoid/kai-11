@@ -23,4 +23,17 @@ function twentyeleven_scripts_styles_override() {
    wp_enqueue_style( 'twentyeleven-kai-style', get_stylesheet_directory_uri() . '/core.css' );
  }
 add_action( 'wp_enqueue_scripts', 'twentyeleven_scripts_styles_override' );
+
+/**
+ * Add theme support for infinity scroll
+ *
+ * @since Twenty Twelve Kai 1.5.2
+ */
+function twenty_eleven_kai_infinite_scroll_init() {
+  add_theme_support( 'infinite-scroll', array(
+    'container'      => 'content',
+		'footer_widgets' => array( 'sidebar-3', 'sidebar-4', 'sidebar-5' )
+	) );
+}
+add_action( 'after_setup_theme', 'twenty_eleven_kai_infinite_scroll_init' );
 ?>
