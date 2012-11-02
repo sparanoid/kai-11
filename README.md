@@ -16,4 +16,4 @@ License
 The license under which the Twenty Eleven Kai is released is the GPLv2 from the [Free Software Foundation][fsf].
 
 [fsf]: http://www.fsf.org
-[demo]: http://postholic.com/twentyeleven-kai/
+[demo]: http://postholic.com/twentyeleven-kai-demo/
