@@ -1,38 +1,243 @@
-/*
- * (c) Tunghsiao Liu.
- *
- * kai-11 - v1.5.6 (05-21-2013)
- * http://sparanoid.com/work/kai/
- * GPLv2 - http://wordpress.org/about/gpl/
- */
-// Add shadow effect to main wrapper,no -webkit or -moz vendor here,plz body,input,textarea{font-family:"Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Microsoft YaHei",sans-serif}// Enables 3D acceleration to gain some performance #primary{-webkit-transform:translate3d(0,0,0);-webkit-backface-visibility:hidden;-webkit-perspective:1000}// Fix b tag b{font-weight:700}// It looks terrible #branding{border-top:0}// Remove search input when .one-column .one-column .only-search{display:none}// No more stupid shadows and gradient #access{background:#000;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}// Change shadows apperance for sub-menus #access ul ul{-webkit-box-shadow:0 1px 5px rgba(0,0,0,.1);-moz-box-shadow:0 1px 5px rgba(0,0,0,.1);box-shadow:0 1px 5px rgba(0,0,0,.1)}// Better menu styles #access .current_page_item{background:#fff}#access .current_page_item a{color:#111}#access .current_page_item>a,#access .current_page_ancestor>a{font-weight:inherit}#access li:hover>a,#access a:focus{background:#fff;background:-webkit-linear-gradient(#eee,#fff);background:-moz-linear-gradient(#eee,#fff);background:linear-gradient(#eee,#fff)}// Better intro styles article.intro{margin:-2em -9% 1.625em}// Remove arrow for comments in one column .commentlist>li:before{display:none}// No shadows and #fff background for user avatar img.avatar{background:none!important;-webkit-box-shadow:none!important;-moz-box-shadow:none!important;box-shadow:none!important}// Specified style fix for Gallery post type article.intro p{margin-bottom:1em}// Make sure videos and images that larger than container width display correctly. Although in WordPress 3.1,images uploaded through built-in and inserted via its media manager can have currect width,but hard coded images still need this. // Update:in 3.2 no longer need workaround for images,but video does. .entry-content video,.comment-content video,.widget video{max-width:97.5%}// Set same font size and line height as what homepage looks like .singular .entry-title{font-size:30px;line-height:1.5em}// Thinner .entry-title,.singular .entry-title{font-weight:200}// Lighter background for image post type .indexed.format-image footer.entry-meta{background:#eee}.indexed.format-image footer.entry-meta a:hover{color:inherit}// Better respond styles #respond{background:#eee}#respond input[type=text],#respond textarea{border-color:#ddd;-webkit-box-shadow:none;-moz-box-shadow:none;box-shaodw:none}#respond .comment-form-author label,#respond .comment-form-email label,#respond .comment-form-url label,#respond .comment-form-comment label{top:48px;left:4px;padding:7px 10px;font-size:14px;background:#ddd;-webkit-box-shadow:none;-moz-box-shadow:none;box-shaodw:none}#respond .comment-form-author .required,#respond .comment-form-email .required{top:56px}// Better look for feed list .rss-date{padding:1px 4px;font-size:10px;font-weight:400;color:#fff;background:#ccc;border-radius:2px;-webkit-box-decoration-break:clone;-moz-box-decoration-break:clone;box-decoration-break:clone}// Better code wrapping in containter code{color:#784;word-break:break-all;word-wrap:break-word}// Override WP Colored Coding Plugin styles .wp-cc{pre{word-wrap:normal;code{word-break:normal;word-wrap:normal}}}pre{overflow:auto}// Try to prevent layout breakers .comment-content{word-wrap:break-word}// Fix search box position with header image but without title #branding .only-search+#access div{padding-right:0}// Pagination floating fix,your code really sucks #nav-single .nav-previous{float:left}#nav-single .nav-next{float:right}// Add a bit background color for widgets in footer,please not it doesn't work with the dark mode yet.
-#colophon { background: #fcfcfc; }
-
-// Well styles from Bootstrap by Twitter
+/* line 2, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\000032}}
+body,
+input,
+textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+/* line 5, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\000035}}
+b {
+  font-weight: bold;
+}
+/* line 10, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\0000310}}
+#branding {
+  border-top: none;
+}
+/* line 13, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\0000313}}
+.one-column .only-search {
+  display: none;
+}
+/* line 16, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\0000316}}
+#access {
+  background: #000;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* line 24, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\0000324}}
+#access ul ul {
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+/* line 31, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\0000331}}
+#access .current_page_item {
+  background: #fff;
+}
+/* line 32, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\0000332}}
+#access .current_page_item a {
+  color: #111;
+}
+/* line 33, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\0000333}}
+#access .current_page_item > a,
+#access .current_page_ancestor > a {
+  font-weight: inherit;
+}
+/* line 34, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\0000334}}
+#access li:hover > a,
+#access a:focus {
+  background: #fff;
+  background: -webkit-linear-gradient(#eeeeee, #ffffff);
+  background: -moz-linear-gradient(#eeeeee, #ffffff);
+  background: linear-gradient(#eeeeee, #ffffff);
+}
+/* line 43, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\0000343}}
+article.intro {
+  margin: -2em -9% 1.625em;
+}
+/* line 46, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\0000346}}
+.commentlist > li:before {
+  display: none;
+}
+/* line 49, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\0000349}}
+img.avatar {
+  background: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+/* line 57, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\0000357}}
+article.intro p {
+  margin-bottom: 1em;
+}
+/* line 64, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\0000364}}
+.entry-content video,
+.comment-content video,
+.widget video {
+  max-width: 97.5%;
+}
+/* line 69, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\0000369}}
+.singular .entry-title {
+  font-size: 30px;
+  line-height: 1.5em;
+}
+/* line 72, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\0000372}}
+.entry-title,
+.singular .entry-title {
+  font-weight: 200;
+}
+/* line 76, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\0000376}}
+.indexed.format-image footer.entry-meta {
+  background: #eee;
+}
+/* line 77, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\0000377}}
+.indexed.format-image footer.entry-meta a:hover {
+  color: inherit;
+}
+/* line 80, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\0000380}}
+#respond {
+  background: #eee;
+}
+/* line 81, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\0000381}}
+#respond input[type="text"],
+#respond textarea {
+  border-color: #ddd;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shaodw: none;
+}
+/* line 87, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\0000387}}
+#respond .comment-form-author label,
+#respond .comment-form-email label,
+#respond .comment-form-url label,
+#respond .comment-form-comment label {
+  top: 48px;
+  left: 4px;
+  padding: 7px 10px;
+  font-size: 14px;
+  background: #ddd;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shaodw: none;
+}
+/* line 98, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\0000398}}
+#respond .comment-form-author .required,
+#respond .comment-form-email .required {
+  top: 56px;
+}
+/* line 101, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\00003101}}
+.rss-date {
+  padding: 1px 4px;
+  font-size: 10px;
+  font-weight: normal;
+  color: #fff;
+  background: #ccc;
+  border-radius: 2px;
+  -webkit-box-decoration-break: clone;
+  -moz-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+/* line 114, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\00003114}}
+code {
+  color: #784;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+/* line 122, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\00003122}}
+.wp-cc pre {
+  word-wrap: normal;
+}
+/* line 124, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\00003124}}
+.wp-cc pre code {
+  word-break: normal;
+  word-wrap: normal;
+}
+/* line 131, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\00003131}}
+pre {
+  overflow: auto;
+}
+/* line 134, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\00003134}}
+.comment-content {
+  word-wrap: break-word;
+}
+/* line 137, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\00003137}}
+#branding .only-search + #access div {
+  padding-right: 0;
+}
+/* line 140, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\00003140}}
+#nav-single .nav-previous {
+  float: left;
+}
+/* line 141, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\00003141}}
+#nav-single .nav-next {
+  float: right;
+}
+/* line 144, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\00003144}}
+#colophon {
+  background: #fcfcfc;
+}
+/* line 147, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\00003147}}
 .well {
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
   background-color: #f9f9f9;
   border: 1px solid #eee;
-  border: 1px solid rgba(0, 0, 0, .05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
-     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
-
-// Better style for Jetpack by WordPress.com
-#respond p.comment-subscription-form { margin: 0; }
-
-// Better look for sidebar widgets on small screens, most of the following crappy shit is about making the world more beautiful.
+/* line 163, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\00003163}}
+#respond p.comment-subscription-form {
+  margin: 0;
+}
+/* line 166, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\00003166}}
 .one-column .widget_twentyeleven_ephemera ol {
   -webkit-column-count: 2;
-     -moz-column-count: 2;
-          column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
 }
+/* line 171, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\00003171}}
 .one-column #archives ul,
 .one-column #meta ul,
 .one-column .widget_pages ul,
@@ -41,23 +246,28 @@
 .one-column .widget_links ul,
 .one-column .widget_meta ul {
   -webkit-column-count: 4;
-     -moz-column-count: 4;
-          column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
 }
-  ul.children {
-    margin-left: 0 !important;
-    -webkit-column-count: 0;
-       -moz-column-count: 0;
-            column-count: 0;
-  }
-
+/* line 182, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\00003182}}
+ul.children {
+  margin-left: 0 !important;
+  -webkit-column-count: 0;
+  -moz-column-count: 0;
+  column-count: 0;
+}
 @media (max-width: 800px) {
+  /* line 190, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\00003190}}
   .widget_twentyeleven_ephemera ol,
   .widget_recent_entries ul {
     -webkit-column-count: 2;
-       -moz-column-count: 2;
-            column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
   }
+  /* line 196, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\00003196}}
   #archives ul,
   #meta ul,
   .widget_pages ul,
@@ -66,14 +276,115 @@
   .widget_links ul,
   .widget_meta ul {
     -webkit-column-count: 4;
-       -moz-column-count: 4;
-            column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
   }
-    ul.children {
-      margin-left: 0 !important;
-      -webkit-column-count: 0;
-         -moz-column-count: 0;
-              column-count: 0;
-    }
-
-  // Make sure the logo and search form [del]don't collide[/del] cleverer than the original. #branding .with-image #searchform{top:auto!important}#branding .only-search #s{width:0}#branding .only-search #s:focus{width:85%}}@media (max-width:650px){#archives ul,#meta ul,.widget_pages ul,.widget_archive ul,.widget_categories ul,.widget_links ul,.widget_meta ul{-webkit-column-count:3;-moz-column-count:3;column-count:3}.one-column #archives ul,.one-column #meta ul,.one-column .widget_pages ul,.one-column .widget_archive ul,.one-column .widget_categories ul,.one-column .widget_links ul,.one-column .widget_meta ul{-webkit-column-count:3;-moz-column-count:3;column-count:3}ul.children{margin-left:0!important;-webkit-column-count:0;-moz-column-count:0;column-count:0}// Fix search box position without header image and title #branding hgroup+.only-search{display:none}}@media (max-width:450px){.widget_twentyeleven_ephemera ol,.widget_recent_entries ul{-webkit-column-count:0;-moz-column-count:0;column-count:0}#archives ul,#meta ul,.widget_pages ul,.widget_archive ul,.widget_categories ul,.widget_links ul,.widget_meta ul{-webkit-column-count:2;-moz-column-count:2;column-count:2}.one-column #archives ul,.one-column #meta ul,.one-column .widget_pages ul,.one-column .widget_archive ul,.one-column .widget_categories ul,.one-column .widget_links ul,.one-column .widget_meta ul{-webkit-column-count:2;-moz-column-count:2;column-count:2}ul.children{margin-left:0!important;-webkit-column-count:0;-moz-column-count:0;column-count:0}}
+  /* line 207, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\00003207}}
+  ul.children {
+    margin-left: 0 !important;
+    -webkit-column-count: 0;
+    -moz-column-count: 0;
+    column-count: 0;
+  }
+  /* line 215, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\00003215}}
+  #branding .with-image #searchform {
+    top: auto !important;
+  }
+  /* line 216, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\00003216}}
+  #branding .only-search #s {
+    width: 0;
+  }
+  /* line 217, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\00003217}}
+  #branding .only-search #s:focus {
+    width: 85%;
+  }
+}
+@media (max-width: 650px) {
+  /* line 221, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\00003221}}
+  #archives ul,
+  #meta ul,
+  .widget_pages ul,
+  .widget_archive ul,
+  .widget_categories ul,
+  .widget_links ul,
+  .widget_meta ul {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+  /* line 232, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\00003232}}
+  .one-column #archives ul,
+  .one-column #meta ul,
+  .one-column .widget_pages ul,
+  .one-column .widget_archive ul,
+  .one-column .widget_categories ul,
+  .one-column .widget_links ul,
+  .one-column .widget_meta ul {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+  /* line 243, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\00003243}}
+  ul.children {
+    margin-left: 0 !important;
+    -webkit-column-count: 0;
+    -moz-column-count: 0;
+    column-count: 0;
+  }
+  /* line 251, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\00003251}}
+  #branding hgroup + .only-search {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  /* line 255, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\00003255}}
+  .widget_twentyeleven_ephemera ol,
+  .widget_recent_entries ul {
+    -webkit-column-count: 0;
+    -moz-column-count: 0;
+    column-count: 0;
+  }
+  /* line 261, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\00003261}}
+  #archives ul,
+  #meta ul,
+  .widget_pages ul,
+  .widget_archive ul,
+  .widget_categories ul,
+  .widget_links ul,
+  .widget_meta ul {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+  /* line 272, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\00003272}}
+  .one-column #archives ul,
+  .one-column #meta ul,
+  .one-column .widget_pages ul,
+  .one-column .widget_archive ul,
+  .one-column .widget_categories ul,
+  .one-column .widget_links ul,
+  .one-column .widget_meta ul {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+  /* line 283, /Users/sparanoid/Sites/localhost/~/wp-content/themes/kai-11/core.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sparanoid\/Sites\/localhost\/~\/wp-content\/themes\/kai-11\/core\.less}line{font-family:\00003283}}
+  ul.children {
+    margin-left: 0 !important;
+    -webkit-column-count: 0;
+    -moz-column-count: 0;
+    column-count: 0;
+  }
+}
