@@ -1,6 +1,6 @@
 # Kai 11 [![Build Status](https://travis-ci.org/sparanoid/kai-11.png)](https://travis-ci.org/sparanoid/kai-11) [![devDependency Status](https://david-dm.org/sparanoid/kai-11/dev-status.png)](https://david-dm.org/sparanoid/kai-11#info=devDependencies)
 
-The missing child theme of Twenty Eleven, A better interface based on Twenty Eleven, No need to change the default theme, no database option strings will be created. Install and go. You can have a look at the [demo][demo] first.
+The missing child theme of Twenty Eleven, A better interface based on Twenty Eleven, No need to change the default theme, no database option strings will be created. Install and go.
 
 ## Download
 
@@ -20,5 +20,4 @@ Answer: Their theme reviewer thinks my theme “just offer a few minor CSS tweak
 
 GPLv2
 
-[demo]: http://postholic.com/kai-11-demo/
 [dl]: http://rsrc.sparanoid.com/download/kai-11.zip
