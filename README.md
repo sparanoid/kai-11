@@ -1,5 +1,7 @@
 # Kai 11 [![Build Status](https://travis-ci.org/sparanoid/kai-11.png)](https://travis-ci.org/sparanoid/kai-11) [![devDependency Status](https://david-dm.org/sparanoid/kai-11/dev-status.png)](https://david-dm.org/sparanoid/kai-11#info=devDependencies)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/sparanoid/kai-11.svg)](https://greenkeeper.io/)
+
 The missing child theme of Twenty Eleven, A better interface based on Twenty Eleven, No need to change the default theme, no database option strings will be created. Install and go.
 
 ## Download
